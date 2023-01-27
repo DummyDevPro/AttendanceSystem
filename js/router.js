@@ -5,11 +5,10 @@ if (true) {
 
     let baseUrl = window.location.origin;
     // For GitHub
-    if (window.location.pathname.includes("github.io")) {
+    if (baseUrl.includes("github.io")) {
         baseUrl += window.location.pathname;
     }
 
-    alert(baseUrl);
     switch (window.location.pathname) {
         // for github
         case '/AttendanceSystem/':
