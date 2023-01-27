@@ -9,11 +9,12 @@ if (true) {
         baseUrl += window.location.pathname;
     }
 
+    alert(baseUrl);
     switch (window.location.pathname) {
         // for github
         case '/AttendanceSystem/':
             window.location.href = baseUrl + '/pages/login.html';
-            break
+            break;
 
         // for localhost
         case '/index.html':
