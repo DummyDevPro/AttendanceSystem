@@ -2,17 +2,29 @@
 if (true) {
     console.log("if => true");
     console.log(window.location.pathname);
+
+    let baseUrl = window.location.origin;
+    // For GitHub
+    if (window.location.pathname.includes("github.io")) {
+        baseUrl += window.location.pathname;
+    }
+
     switch (window.location.pathname) {
         // for github
         case '/AttendanceSystem/':
+            window.location.href = baseUrl + 'pages/login.html';
+            break
+
         // for localhost
         case '/index.html':
         case '/':
-            console.log("redirect here");
-            window.location.href = window.location.origin + '/pages/login.html';
+            window.location.href = baseUrl + '/pages/login.html';
             break;
+
+        // for error 
         case 404:
-            window.location.href = window.location.origin + '404.html';
+        default:
+            window.location.href = baseUrl + '/error-pages/404.html';
             break;
     }
 }
