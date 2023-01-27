@@ -3,6 +3,9 @@ if (true) {
     console.log("if => true");
     console.log(window.location.pathname);
     switch (window.location.pathname) {
+        // for github
+        case '/AttendanceSystem/':
+        // for localhost
         case '/index.html':
         case '/':
             console.log("redirect here");
