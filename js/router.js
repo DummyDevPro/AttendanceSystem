@@ -1,6 +1,7 @@
 // Check User Information in browser storage 
 if (true) {
     console.log("if => true");
+    console.log(window.location.pathname);
     switch (window.location.pathname) {
         case '/index.html':
         case '/':
