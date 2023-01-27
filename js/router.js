@@ -12,7 +12,7 @@ if (true) {
     switch (window.location.pathname) {
         // for github
         case '/AttendanceSystem/':
-            window.location.href = baseUrl + 'pages/login.html';
+            window.location.href = baseUrl + '/pages/login.html';
             break
 
         // for localhost
