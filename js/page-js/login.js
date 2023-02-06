@@ -1,5 +1,6 @@
 // Accessing latest basic api
-if (!localStorage.getItem('latest_basic_url')) loadLatestBasicAPI();
+// if (!localStorage.getItem('latest_basic_url')) loadLatestBasicAPI();
+loadLatestBasicAPI();
 
 // ログイン処理
 function loginAction(event) {
